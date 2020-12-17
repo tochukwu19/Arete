@@ -1,0 +1,86 @@
+@import '../abstracts/variables';
+@import '../abstracts/functions';
+@import '../abstracts/placeholders';
+
+.intro {
+    @extend %text-center;
+
+    margin: 1em 0;
+
+    p {
+        color: #007ABB;
+    }
+
+}
+
+h2 {
+    color: getColor('dark-blue');
+    margin-bottom: 0.2em;
+    text-transform: capitalize;
+}
+
+.founders {
+    @extend %flex;
+
+    align-items: center;
+    flex-direction: column;
+}
+
+.founder {
+    margin: 1em 0;
+
+    &-image {
+        border: 2px solid rgb(209, 54, 26);
+        border-radius: 50%;
+    }
+
+    &-info {
+        @extend %text-center;
+
+        p {
+            margin: 0.5em 0;
+        }
+
+        a {
+            color: color('dark-blue');
+            margin: 0 0.2em;
+        }
+    }
+
+}
+
+.about {
+    @extend %container;
+
+    background: color('light-gray');
+    margin: 2em auto;
+}
+
+section {
+    padding: 1em;
+}
+
+@media (min-width: 600px) {
+    .founders {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .about {
+        background: getColor('white');
+        border-radius: 6px;
+        box-shadow: 24px 18px 64px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+    
+        &-row {
+            width: 45%;
+            
+            &:nth-child(2) {
+                border-left: 1px solid getColor('gray-bg');
+            }
+        }
+    }
+
+}

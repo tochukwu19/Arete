@@ -1,0 +1,54 @@
+@import '../abstracts/variables';
+@import '../abstracts/functions';
+@import '../abstracts/placeholders';
+
+.events {
+    @extend %container;
+
+    background: getColor('white');
+    border-radius: 6px;
+    box-shadow: 24px 18px 64px rgba(0, 0, 0, 0.1);
+    margin: 2em auto;
+    padding: 1.5em;
+
+    &-menu {
+        text-align: center;
+    }
+
+    &-item {
+        font-weight: fontWeight('bold');
+        padding: 0.75em 0;
+
+        a {
+            color: getColor('dark-gray');
+
+            &:hover {
+                color: getColor('light-blue');
+            }
+        }
+    }
+
+    .events-gallery {
+        @extend %container;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 1em;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .events {
+        display: grid;
+        grid-template-columns: 25% 75%;
+
+        &-menu {
+            border-right: 1px solid getColor('gray-bg');
+            text-align: left;
+        }
+    }
+}

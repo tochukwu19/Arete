@@ -1,0 +1,165 @@
+.header-menu, .mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo, .header-menu {
+  margin: 0 auto;
+  width: 90%;
+}
+
+h1, footer {
+  text-align: center;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  background: #e5e5e5;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+}
+
+.top-image {
+  width: 100%;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+
+h1 {
+  color: #1682c3;
+  font-weight: 600;
+  margin: 0.5em 0;
+  text-transform: uppercase;
+}
+
+.hide {
+  display: none;
+}
+
+.hamburger {
+  margin: 0 1em;
+}
+
+.logo {
+  width: 96px;
+}
+
+.header {
+  background: #fff;
+}
+
+.header-menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.header-nav {
+  display: none;
+  font-weight: 600;
+}
+
+.header-link {
+  color: #00366e;
+}
+
+.header-current {
+  color: #e80077;
+}
+
+@media (min-width: 400px) {
+  .hamburger {
+    display: none;
+  }
+  .logo {
+    margin: 0;
+    width: 70px;
+  }
+  .header-nav {
+    display: block;
+    max-width: 500px;
+    width: 70%;
+  }
+  .header-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .header-item {
+    margin-right: 1em;
+  }
+}
+
+.mobile-bg {
+  background: #1f364e;
+}
+
+.mobile-nav {
+  background: #1f364e;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.mobile-list {
+  padding: 3em 0;
+}
+
+.mobile-item {
+  padding: 1.3em 0;
+}
+
+.mobile-link {
+  color: #fff;
+}
+
+.mobile-current {
+  color: #a3eeff;
+}
+
+footer {
+  background: #103459;
+  padding: 1em 0;
+}
+
+footer,
+footer a {
+  color: #a3eeff;
+}
+/*# sourceMappingURL=main.css.map */

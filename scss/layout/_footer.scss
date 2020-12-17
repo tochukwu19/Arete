@@ -1,0 +1,12 @@
+footer {
+    @extend %text-center;
+
+    background: getColor('very-dark-blue');
+    padding: 1em 0;
+
+    &,
+    & a {
+        color: getColor('sky-blue');
+    }
+    
+}

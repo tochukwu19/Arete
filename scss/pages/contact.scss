@@ -1,0 +1,65 @@
+@import '../abstracts/variables';
+@import '../abstracts/functions';
+@import '../abstracts/placeholders';
+
+.main-content {
+    @extend %container;
+
+    background: getColor('white');
+    border-radius: 6px;
+    box-shadow: 24px 18px 64px rgba(0, 0, 0, 0.1);
+    line-height: 2;
+    margin: 2em auto;
+}
+
+h2 {
+    color: getColor('dark-blue');
+    font-size: 1.75rem;
+    margin: 0.75em 0;
+}
+
+.form-input,
+.submit-btn {
+    font-family: $font-family;
+    font-size: 1.125rem;
+    margin: 0.75em 0;
+    width: 100%;
+}
+
+.form-input {
+    border: 1px solid getColor('light-blue');
+    outline: none;
+    padding: 0.5em;
+}
+
+.submit-btn {
+    background: #2196f3;
+    border: none;
+    border-radius: 7px;
+    color: getColor('sky-blue');
+    cursor: pointer;
+    font-weight: fontWeight('bold');
+    margin-bottom: 1em;
+    padding: 0.75em;
+    text-transform: uppercase;
+}
+
+textarea {
+    resize: none;
+}
+
+@media (min-width: 700px) {
+    .main-content {
+        display: flex;
+    }
+
+    form,
+    section {
+        padding: 0 3em;
+        width: 50%;
+    }
+
+    form {
+        border-left: 1px solid getColor('gray-bg');
+    }
+}

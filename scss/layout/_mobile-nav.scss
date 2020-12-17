@@ -1,0 +1,30 @@
+.mobile {
+    &-bg {
+        background: getColor('mobile-bg');
+    }
+
+    &-nav {
+        @extend %flex;
+    
+        background: getColor('mobile-bg');
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    &-list {
+        padding: 3em 0;
+    }
+    
+    &-item {
+        padding: 1.3em 0;
+    }
+    
+    &-link {
+        color: getColor('white');
+    }
+
+    &-current {
+        color: getColor('sky-blue');
+    }
+    
+}

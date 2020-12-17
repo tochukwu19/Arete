@@ -1,0 +1,65 @@
+.hamburger {
+    margin: 0 1em;
+}
+
+.logo {
+    @extend %container;
+
+    width: 96px;
+}
+
+.header {
+    background: getColor('white');
+
+    &-menu {
+        @extend %flex;
+        @extend %container;
+
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &-nav {
+        display: none;
+        font-weight: fontWeight('semi-bold');
+    }
+
+    &-link {
+        color: getColor('dark-blue');
+    }
+
+    &-current {
+        color: getColor('magenta');
+    }
+    
+}
+
+@media (min-width: 400px) {
+    .hamburger {
+        display: none;
+    }
+
+    .logo {
+        margin: 0;
+        width: 70px;
+    }
+
+    .header {
+        &-nav {
+            display: block;
+            max-width: 500px;
+            width: 70%;
+        }
+
+        &-list {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &-item {
+            margin-right: 1em;
+        }
+    }
+
+}

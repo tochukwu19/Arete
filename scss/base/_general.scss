@@ -1,0 +1,28 @@
+
+body {
+    background: getColor('gray-bg');
+    color: getColor('dark-gray');
+    font-family: $font-family;
+}
+
+.top-image {
+    width: 100%;
+}
+
+img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+h1 {
+    @extend %text-center;
+
+    color: getColor('light-blue');
+    font-weight: fontWeight('semi-bold');
+    margin: 0.5em 0;
+    text-transform: uppercase;
+}
+
+.hide {
+    display: none;
+}
